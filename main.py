@@ -17,3 +17,11 @@ class Translator:
     def translate_to_french(self, text):
         # Placeholder for actual translation logic
         return f"Translated to French: {text}"
+if __name__ == "__main__":
+    translator = Translator("Spanish")
+    print(translator.translate("Hello, how are you?"))
+
+    translator = Translator("French")
+    print(translator.translate("Hello, how are you?"))
+
+    
