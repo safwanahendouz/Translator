@@ -1,3 +1,4 @@
+#translator using tkinter method
 class Translator:
     def __init__(self, language):
         self.language = language
@@ -24,4 +25,8 @@ if __name__ == "__main__":
     translator = Translator("French")
     print(translator.translate("Hello, how are you?"))
 
+
     
+
+
+
