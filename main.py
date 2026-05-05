@@ -1,32 +1,13 @@
-#translator using tkinter method
-class Translator:
-    def __init__(self, language):
-        self.language = language
+from tkinter import *
+from tkinter import tkk,messagebox
+import googletrans
+import textblob
 
-    def translate(self, text):
-        if self.language == "Spanish":
-            return self.translate_to_spanish(text)
-        elif self.language == "French":
-            return self.translate_to_french(text)
-        else:
-            raise ValueError("Unsupported language")
+root=Tk()
+root.title("Google Translator")
+root.geometry("1080x400")
+root.configure(bg="white")
+root.mainloop
 
-    def translate_to_spanish(self, text):
-        # Placeholder for actual translation logic
-        return f"Translated to Spanish: {text}"
-
-    def translate_to_french(self, text):
-        # Placeholder for actual translation logic
-        return f"Translated to French: {text}"
-if __name__ == "__main__":
-    translator = Translator("Spanish")
-    print(translator.translate("Hello, how are you?"))
-
-    translator = Translator("French")
-    print(translator.translate("Hello, how are you?"))
-
-
-    
-
-
+#icon
 
