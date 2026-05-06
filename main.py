@@ -22,5 +22,12 @@ combo1.set("ENGLISH")
 root.configure(bg="white")
 root.mainloop()
 
+root.mainloop()
+combo1=ttk.Combobox(root,values=languageV,font="Roboto 14",state="r")
+combo1.place(x=110,y=20)
+combo1.set("ENGLISH")
+
+
+
 
 
